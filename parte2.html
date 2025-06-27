@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Condiciones</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h2>Parte 2: Cantidad de Stickers</h2>
+    <p style="text-align: center;">Puedes llevar hasta <b>10</b> stickers</p>
+    <div class="bloque">
+        <div class="sticker">
+            <img src="./assets/imgs/1mario.jpg" alt="Sticker de Mario">
+            <input id="mario" class="input" type="text">
+        </div>
+        <div class="sticker">
+            <img src="./assets/imgs/2luigi.jpg" alt="Sticker de Luigi">
+            <input id="luigi" class="input" type="text">
+        </div>
+        <div class="sticker">
+            <img src="./assets/imgs/3yoshi.jpg" alt="Sticker de Yoshi">
+            <input id="yoshi" class="input" type="text">
+        </div>
+    </div>
+    <p id="error" style="text-align: center;"></p>
+    <div class="verificar">    
+        <button onclick="
+        marioInput = document.querySelector(`#mario`);
+        mario = Number(marioInput.value);
+        luigiInput = document.querySelector(`#luigi`);
+        luigi = Number(luigiInput.value);
+        yoshiInput = document.querySelector(`#yoshi`);
+        yoshi = Number(yoshiInput.value);
+        error = document.querySelector(`#error`);
+        total = mario + luigi + yoshi
+        if(total > 10){
+            error.innerHTML = `Llevas demasiados stickers`
+        }
+        else{
+            error.innerHTML = `Llevas ` + total + ` stickers`
+
+        }
+        ">Verificar</button>
+    </div>
+    <a href="./index.html">Desafío Parte 1</a><br>
+    <a href="./parte3.html">Desafío  Parte 3</a>
+</body>
+</html>

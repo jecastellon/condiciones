@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Condiciones</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h2>Parte 3: Contraseña</h2>
+    <div class="cuadrado" style="margin: auto;">
+        <p style="text-align: center;">Ingresa el password</p>
+        <div class="selectores">
+            <select name="primero" id="primero">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="segundo" id="segundo">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="tercero" id="tercero">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button onclick="
+        primero = document.querySelector(`#primero`).value
+        segundo = document.querySelector(`#segundo`).value
+        tercero = document.querySelector(`#tercero`).value
+        resultado = document.querySelector(`#resultado`)
+        if(primero == 9 && segundo == 1 && tercero == 1){
+            resultado.innerHTML = `Password 1 correcto`
+        }
+        else if(primero == 7 && segundo == 1 && tercero == 4){
+            resultado.innerHTML = `Password 2 correcto`
+        }
+        else{
+            resultado.innerHTML = `Password incorrecto`
+        }
+        ">Ingresar</button>
+            <p id="resultado" style="text-align: center;"></p>
+    </div>
+    <a href="./index.html">Desafío Parte 1</a><br>
+    <a href="./parte2.html">Desafío  Parte 2</a>
+</body>
+</html>
