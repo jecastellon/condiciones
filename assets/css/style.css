@@ -1,0 +1,38 @@
+h2{
+    text-align: center;
+}
+.imagen{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+.bloque{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sticker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    border: 1px solid black;
+}
+.verificar{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.cuadrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 20px;
+    border: 2px solid black;
+}
+.selectores{
+    margin: 20px;
+}
